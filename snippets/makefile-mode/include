@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Include another makefile
+# key: include
+# expand-env: ((yas-indent-line 'fixed))
+# --
+include ${1:makefile}
+$0

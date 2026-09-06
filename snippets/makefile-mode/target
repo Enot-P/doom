@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Makefile target with dependencies
+# key: target
+# expand-env: ((yas-indent-line 'fixed))
+# --
+${1:target}: ${2:deps}
+	${3:recipe}
+$0

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: Test target
+# key: test
+# expand-env: ((yas-indent-line 'fixed))
+# --
+.PHONY: test
+
+test:
+	${1:go test ./...}
+$0

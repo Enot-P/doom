@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: Clean target
+# key: clean
+# expand-env: ((yas-indent-line 'fixed))
+# --
+.PHONY: clean
+
+clean:
+	rm -rf ${1:bin/}
+$0

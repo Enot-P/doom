@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: Conditional ifeq block
+# key: ifeq
+# expand-env: ((yas-indent-line 'fixed))
+# --
+ifeq (${1:cond1}, ${2:cond2})
+	${3:body}
+endif
+$0

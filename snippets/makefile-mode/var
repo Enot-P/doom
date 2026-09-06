@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Simply expanded variable
+# key: var
+# expand-env: ((yas-indent-line 'fixed))
+# --
+${1:name} := ${2:value}
+$0

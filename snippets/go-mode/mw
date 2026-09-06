@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: Middleware func
+# key: mw
+# --
+func ${1:Name}(next http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		$0
+		next.ServeHTTP(w, r)
+	})
+}

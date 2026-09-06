@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Chain apply
+# key: chain
+# --
+${1:handler} = Chain($1, ${2:mw1, mw2})$0

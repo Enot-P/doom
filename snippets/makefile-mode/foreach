@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: foreach function
+# key: foreach
+# expand-env: ((yas-indent-line 'fixed))
+# --
+\$(foreach ${1:var},${2:list},${3:text})$0

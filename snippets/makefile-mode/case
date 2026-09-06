@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: Shell case statement in recipe
+# key: case
+# expand-env: ((yas-indent-line 'fixed))
+# --
+case "${1:var}" in
+	${2:pattern})
+		${3:body}
+		;;
+esac
+$0

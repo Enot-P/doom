@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: Conditional ifdef block
+# key: ifdef
+# expand-env: ((yas-indent-line 'fixed))
+# --
+ifdef ${1:var}
+	${2:body}
+endif
+$0

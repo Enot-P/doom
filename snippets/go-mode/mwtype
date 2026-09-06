@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: Middleware type
+# key: mwtype
+# --
+type Middleware func(http.Handler) http.Handler
+$0

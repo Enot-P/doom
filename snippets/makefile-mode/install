@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: Install target
+# key: install
+# expand-env: ((yas-indent-line 'fixed))
+# --
+.PHONY: install
+
+install:
+	${1:cp bin/app /usr/local/bin/}
+$0

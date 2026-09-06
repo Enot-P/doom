@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Drop PostgreSQL function if exists
+# key: pgdropfunc
+# --
+DROP FUNCTION IF EXISTS ${1:schema}.${2:function_name}(${3:param_types});$0

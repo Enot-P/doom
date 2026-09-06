@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Pattern rule with %
+# key: pattern
+# expand-env: ((yas-indent-line 'fixed))
+# --
+${1:%.o}: ${2:%.c}
+	${3:recipe}
+$0

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: Middleware func with deps
+# key: mwd
+# --
+func ${1:Name}(${2:dep} ${3:Type}) Middleware {
+	return func(next http.Handler) http.Handler {
+		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+			$0
+			next.ServeHTTP(w, r)
+		})
+	}
+}

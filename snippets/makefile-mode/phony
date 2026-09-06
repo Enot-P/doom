@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: Declare phony targets
+# key: phony
+# expand-env: ((yas-indent-line 'fixed))
+# --
+.PHONY: $0

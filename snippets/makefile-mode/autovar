@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: Common automatic variables reminder
+# key: autovar
+# expand-env: ((yas-indent-line 'fixed))
+# --
+\$@    # target name
+\$<    # first prerequisite
+\$^    # all prerequisites
+\$?    # prerequisites newer than target
+\$*    # stem of the pattern match
+$0

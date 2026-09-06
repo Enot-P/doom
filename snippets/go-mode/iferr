@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: If err return
+# key: iferr
+# --
+if err != nil {
+	$1
+	return
+}
+$0

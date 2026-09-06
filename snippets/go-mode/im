@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Interface method
+# key: im
+# --
+${1:MethodName}(${2:arg} ${3:Type}) (${4:ReturnType}, error)$0

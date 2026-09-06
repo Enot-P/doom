@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: Docker build target
+# key: docker
+# expand-env: ((yas-indent-line 'fixed))
+# --
+.PHONY: docker
+
+docker:
+	docker build -t ${1:image}:${2:latest} .
+$0

@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: Create or replace PostgreSQL trigger function
+# key: pgfunctrigger
+# --
+CREATE OR REPLACE FUNCTION ${1:schema}.${2:function_name}()
+RETURNS trigger
+LANGUAGE plpgsql
+AS \$\$
+BEGIN
+	$0
+	RETURN ${3:NEW};
+END;
+\$\$;

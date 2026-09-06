@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: Create or replace PostgreSQL function (pure SQL)
+# key: pgfuncsql
+# --
+CREATE OR REPLACE FUNCTION ${1:schema}.${2:function_name}(
+	${3:param_name} ${4:param_type}
+)
+RETURNS ${5:return_type}
+LANGUAGE sql
+STABLE
+AS \$\$
+	$0
+\$\$;

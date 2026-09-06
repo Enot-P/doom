@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: Build target
+# key: build
+# expand-env: ((yas-indent-line 'fixed))
+# --
+.PHONY: build
+
+build: ${1:deps}
+	${2:go build -o bin/app .}
+$0
